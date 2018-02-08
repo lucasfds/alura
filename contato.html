@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="img/favicon.png">
+        <title>João Da Silva - Contato</title>
+
+        <!-- Reset CSS -->
+        <link type="text/css" rel="stylesheet" href="css/reset.css">
+        <!-- carrega a fonte Crimson Text nas versões normal, itálico e negrito -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
+        <!-- carrega a fonte Open Sans Condensed na versão negrito -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
+        <!-- Estilos da Página -->
+        <link type="text/css" rel="stylesheet" href="css/site.css">
+        <link type="text/css" rel="stylesheet" href="css/contato.css">
+    </head>
+
+    <body class="wrap">
+        <main class="conteudo">
+            <h1>Contato</h1>
+            <div class="conteudo-largura">   
+
+                <form class="formulario">
+
+                    <fieldset class="formulario-dados">
+                        <legend>Seus dados</legend>
+                        <label class="form-nome">Nome:<input class="campo-texto" id="nome" type="text" name="nome-contato" required autofocus placeholder="Digite seu nome" pattern="[A-Za-z ']{4,}" title="O nome precisa ter pelo menos 4 caracteres"></label>
+                        <label class="form-email">Email:<input class="campo-texto" id="email" type="email" name="email-contato" required placeholder="Digite seu e-mail"></label>
+                    </fieldset>
+
+                    <fieldset class="formulario-assunto">
+                        <legend>Assunto</legend>
+                        <label class="form-blog"><input type="radio" value="Blog" name="assunto">Blog</label>
+                        <label class="form-servico"><input type="radio" value="Serviço" name="assunto">Serviço</label>
+                        <fieldset class="form-outro">
+                            <input type="radio" value="Outro" id="outro" name="assunto">
+                            <label for="outro">Outro</label>
+                            <input class="campo-texto-outro" type="text" name="outro-assunto">
+                        </fieldset>
+                    </fieldset>
+
+                    <label class="form-mensagem" for="mensagem">Mensagem</label>
+                    <textarea name="msg" id="mensagem" cols="60" rows="10" placeholder="Digite aqui sua mensagem"></textarea>
+                    <button class="form-bt" type="submit">Enviar mensagem</button>
+
+                </form>        
+
+            </div>
+        </main>
+        <img class="foto-joao" src="img/eu.jpg" alt="Foto de João da Silva" title="Foto de João da Silva">
+        <aside class="navegacao-site">
+            <h1>João da Silva</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="bio.html">Sobre mim</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <ul class="icones-sociais">
+                <li><a class="github" data-tooltip="Veja meus projetos opensource" href="https://github.com/git-joaodasilva">Github</a></li>
+                <li><a class="twitter" data-tooltip="Siga-me no Twitter" href="https://twitter.com/twitter-joaodasilva">Twitter</a></li>
+                <li><a class="linkedin" data-tooltip="Veja meu currículo" href="https://br.linkedin.com/pub/linkedin-joao-da-silva/32/4/508">LinkedIn</a></li>
+            </ul>
+        </aside>
+        <footer class="rodape">
+            &copy; João da Silva 2014
+        </footer>
+    </body>
+</html>
